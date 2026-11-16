@@ -19,6 +19,8 @@
 
     <properties>
         <java.version>21</java.version>
+        <!-- Docker Engine 29 (GitHub runners since late 2025) needs a newer Testcontainers than Boot 3.3 manages -->
+        <testcontainers.version>1.21.4</testcontainers.version>
     </properties>
 
     <dependencies>
