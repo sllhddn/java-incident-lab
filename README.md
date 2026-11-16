@@ -2,8 +2,10 @@
 
 ![CI](https://github.com/sllhddn/java-incident-lab/actions/workflows/ci.yml/badge.svg)
 
-| [Debugging playbook](docs/DEBUGGING-PLAYBOOK.md) | [Incident write-ups](docs/incidents/) | [Changelog](CHANGELOG.md) |
-|---|---|---|
+| [Debugging playbook](docs/DEBUGGING-PLAYBOOK.md) | [Incident write-ups](docs/incidents/) | [Poster (PDF, A3)](docs/poster.pdf) | [Changelog](CHANGELOG.md) |
+|---|---|---|---|
+
+<a href="docs/poster.png"><img src="docs/poster.png" alt="java-incident-lab project poster" width="420" align="right"></a>
 
 **Ten Java production incidents, reproduced as failing tests, root-caused and fixed.**
 Java 21 · Spring Boot 3 · Spring Data JPA / Hibernate 6 · PostgreSQL 16 · Flyway · Testcontainers · JUnit 5 · Docker
