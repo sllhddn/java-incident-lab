@@ -21,6 +21,8 @@ show that skill on code anyone can run. Each incident has:
 The running application (an order service) always uses the fixed versions.
 *Scenarios, data and logs are fictional.*
 
+<br clear="right">
+
 ## The incidents
 
 | # | Incident | Bug class | Found with | Test technique |
