@@ -1,0 +1,18 @@
+### Place an order (customer 4 is PLATINUM: the tier behind INC-01)
+POST http://localhost:8080/api/orders
+Content-Type: application/json
+
+{"customerId": 4, "sku": "KB-001", "quantity": 1}
+
+### List orders (one SQL statement: the INC-02 fix)
+GET http://localhost:8080/api/orders
+
+### Out of stock -> 409
+POST http://localhost:8080/api/orders
+Content-Type: application/json
+
+{"customerId": 1, "sku": "HD-004", "quantity": 50}
+
+### Thread dump (what jstack would show)
+GET http://localhost:8080/actuator/threaddump
+Accept: text/plain

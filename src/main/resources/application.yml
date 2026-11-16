@@ -1,0 +1,36 @@
+spring:
+  application:
+    name: java-incident-lab
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/incidentlab}
+    username: ${DB_USER:incidentlab}
+    password: ${DB_PASSWORD:incidentlab}
+    hikari:
+      maximum-pool-size: ${DB_POOL_SIZE:10}
+      connection-timeout: 5000
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        generate_statistics: ${HIBERNATE_STATS:false}
+  flyway:
+    enabled: true
+
+lab:
+  business-zone: Asia/Kuala_Lumpur
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,threaddump
+  endpoint:
+    health:
+      probes:
+        enabled: true
+
+logging:
+  level:
+    io.github.sllhddn.incidentlab: INFO
